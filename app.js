@@ -19,7 +19,7 @@ if (verifyConfiguration(cfg)) {
           // skip directories
           if (
             fs.statSync(fileTemplatePath).isDirectory() ||
-            fileTemplatePath === '.gitkeep'
+            file === '.gitkeep'
           ) {
             return;
           }
