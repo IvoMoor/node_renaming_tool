@@ -4,18 +4,18 @@ This tool can be used to rename multiple file names and their contents based on 
 
 ## Example
 
-The CSV file located in the application rootfolder with name `content.csv` contains the following data:
+The CSV file located in the application rootfolder with name ```content.csv``` contains the following data:
 ``` csv
 PLACEHOLDER_01;PLACEHOLDER_02;
 exampleA;ExampleB
 ```
 
-In the `./template` directory the following file is defined: `File___PLACEHOLDER_01__.txt` with content:
+In the ```./template``` directory the following file is defined: ```File___PLACEHOLDER_01__.txt``` with content:
 ``` txt
 This is an example for __PLACEHOLDER_01__ and __PLACEHOLDER_02__.
 ```
 
-When running this application, a file will be generated in the `./output` folder named `File_exampleA.txt`
+When running this application, a file will be generated in the ```./output``` folder named ```File_exampleA.txt```
 The contents of this file will be:
 ``` txt
 This is an example for exampleA and ExampleB
@@ -59,4 +59,4 @@ node app.js contents=abc.csv
 Change the contents CSV file name and the CSV delmiter
 ``` cmd
 node app.js contents=abc.csv delimiter=","
-``` cmd
+``` 
