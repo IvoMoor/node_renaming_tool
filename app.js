@@ -17,7 +17,10 @@ if (verifyConfiguration(cfg)) {
           let fileTemplatePath = path.join(cfg.dirTemplates, file);
 
           // skip directories
-          if (fs.statSync(fileTemplatePath).isDirectory()) {
+          if (
+            fs.statSync(fileTemplatePath).isDirectory() ||
+            fileTemplatePath === '.gitkeep'
+          ) {
             return;
           }
 
