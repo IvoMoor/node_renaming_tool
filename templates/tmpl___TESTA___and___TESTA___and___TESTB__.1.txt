@@ -1,1 +1,0 @@
-Dit is een test voor __TESTA__ en __TESTB__ en nog een keer __TESTA__ en __TESTB__.
